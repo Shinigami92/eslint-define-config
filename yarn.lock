@@ -179,6 +179,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/eslint@npm:~7.28.0":
+  version: 7.28.0
+  resolution: "@types/eslint@npm:7.28.0"
+  dependencies:
+    "@types/estree": "*"
+    "@types/json-schema": "*"
+  checksum: 75ac2577d2a2e35bae66f56d2d1c871d5e836b2721cf14bd3df450c9d584eba48fa3b1013fba710245bf4795f16e1df0ed315e543e3199c4815ee4782537d0ae
+  languageName: node
+  linkType: hard
+
+"@types/estree@npm:*":
+  version: 0.0.50
+  resolution: "@types/estree@npm:0.0.50"
+  checksum: 9a2b6a4a8c117f34d08fbda5e8f69b1dfb109f7d149b60b00fd7a9fb6ac545c078bc590aa4ec2f0a256d680cf72c88b3b28b60c326ee38a7bc8ee1ee95624922
+  languageName: node
+  linkType: hard
+
 "@types/http-cache-semantics@npm:*":
   version: 4.0.1
   resolution: "@types/http-cache-semantics@npm:4.0.1"
@@ -186,7 +203,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/json-schema@npm:^7.0.7":
+"@types/json-schema@npm:*, @types/json-schema@npm:^7.0.7":
   version: 7.0.9
   resolution: "@types/json-schema@npm:7.0.9"
   checksum: 259d0e25f11a21ba5c708f7ea47196bd396e379fddb79c76f9f4f62c945879dc21657904914313ec2754e443c5018ea8372362f323f30e0792897fdb2098a705
@@ -338,7 +355,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"acorn-jsx@npm:^5.3.1":
+"acorn-jsx@npm:^5.2.0, acorn-jsx@npm:^5.3.1":
   version: 5.3.2
   resolution: "acorn-jsx@npm:5.3.2"
   peerDependencies:
@@ -347,7 +364,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"acorn@npm:^7.4.0":
+"acorn@npm:^7.1.1, acorn@npm:^7.4.0":
   version: 7.4.1
   resolution: "acorn@npm:7.4.1"
   bin:
@@ -1095,6 +1112,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "eslint-define-config@workspace:."
   dependencies:
+    "@types/eslint": ~7.28.0
     "@types/node": ~16.9.6
     "@typescript-eslint/eslint-plugin": ~4.31.2
     "@typescript-eslint/parser": ~4.31.2
@@ -1104,6 +1122,7 @@ __metadata:
     eslint-plugin-jsdoc: ~36.1.0
     eslint-plugin-prettier: ~4.0.0
     eslint-plugin-spellcheck: ~0.0.19
+    eslint-plugin-vue: ~7.18.0
     np: ~7.5.0
     prettier: 2.4.1
     prettier-plugin-organize-imports: ~2.3.4
@@ -1164,6 +1183,20 @@ __metadata:
   peerDependencies:
     eslint: ">=0.8.0"
   checksum: 58c54bda54385a39834c386188b2572b7a14f4e13a18af6dd4b565bd25046c5e84f08efe7899b26153e02cb26a922c2df70912356835e5ef79851a9e85eafff2
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-vue@npm:~7.18.0":
+  version: 7.18.0
+  resolution: "eslint-plugin-vue@npm:7.18.0"
+  dependencies:
+    eslint-utils: ^2.1.0
+    natural-compare: ^1.4.0
+    semver: ^6.3.0
+    vue-eslint-parser: ^7.10.0
+  peerDependencies:
+    eslint: ^6.2.0 || ^7.0.0 || ^8.0.0-0
+  checksum: 5df7e23478cb1094c5a0918c4239d50126c1770e34d4fb9ad30737b58a9ad33d31dda7d05aad2bc28dc97651a6c34c67f243bd82145ff76b6aea81f5c06345fd
   languageName: node
   linkType: hard
 
@@ -1258,6 +1291,17 @@ __metadata:
   bin:
     eslint: bin/eslint.js
   checksum: cc85af9985a3a11085c011f3d27abe8111006d34cc274291b3c4d7bea51a4e2ff6135780249becd919ba7f6d6d1ecc38a6b73dacb6a7be08d38453b344dc8d37
+  languageName: node
+  linkType: hard
+
+"espree@npm:^6.2.1":
+  version: 6.2.1
+  resolution: "espree@npm:6.2.1"
+  dependencies:
+    acorn: ^7.1.1
+    acorn-jsx: ^5.2.0
+    eslint-visitor-keys: ^1.1.0
+  checksum: 99c508950b5b9f53d008d781d2abb7a4ef3496ea699306fb6eb737c7e513aa594644314364c50ec27abb220124c6851fff64a6b62c358479534369904849360b
   languageName: node
   linkType: hard
 
@@ -3933,6 +3977,23 @@ typescript@~4.4.3:
   dependencies:
     builtins: ^1.0.3
   checksum: ce4c68207abfb22c05eedb09ff97adbcedc80304a235a0844f5344f1fd5086aa80e4dbec5684d6094e26e35065277b765c1caef68bcea66b9056761eddb22967
+  languageName: node
+  linkType: hard
+
+"vue-eslint-parser@npm:^7.10.0":
+  version: 7.11.0
+  resolution: "vue-eslint-parser@npm:7.11.0"
+  dependencies:
+    debug: ^4.1.1
+    eslint-scope: ^5.1.1
+    eslint-visitor-keys: ^1.1.0
+    espree: ^6.2.1
+    esquery: ^1.4.0
+    lodash: ^4.17.21
+    semver: ^6.3.0
+  peerDependencies:
+    eslint: ">=5.0.0"
+  checksum: 16d8bd31dacd9e5d3cd0fc82354c0cfdb42ee3d2e0c3aeda385b82aa48a59a440de3dc18521ea6535f4b00a54eb248d49a6ea2323fbae0d3c1afa0a00c63fe6c
   languageName: node
   linkType: hard
 

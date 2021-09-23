@@ -38,6 +38,7 @@
     "tsconfig.json"
   ],
   "devDependencies": {
+    "@types/eslint": "~7.28.0",
     "@types/node": "~16.9.6",
     "@typescript-eslint/eslint-plugin": "~4.31.2",
     "@typescript-eslint/parser": "~4.31.2",
@@ -47,6 +48,7 @@
     "eslint-plugin-jsdoc": "~36.1.0",
     "eslint-plugin-prettier": "~4.0.0",
     "eslint-plugin-spellcheck": "~0.0.19",
+    "eslint-plugin-vue": "~7.18.0",
     "np": "~7.5.0",
     "prettier": "2.4.1",
     "prettier-plugin-organize-imports": "~2.3.4",
